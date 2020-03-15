@@ -6,7 +6,7 @@ In this lab, we're going to generate our first insight: What is the total retail
 value of the snacks in the vending machine. You're then going to complete a lab
 where we calculate how much money the directors' movies made using the same
 data from the previous lesson.
-
+           
 To accomplish this, we're going to continue following the strategy we described
 a few lessons ago:
 
