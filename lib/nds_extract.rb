@@ -1,17 +1,17 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 def directors_totals(nds)
-  pp directors_database
+  pp nds
  counter = 0
  hash = {}
- while  counter <directors_database.length do
+ while  counter <nds.length do
     gross=0
     index=0 
-  while index < directors_database[counter][:movies].size do
-  gross += directors_database[counter][:movies][index][:worldwide_gross]
+  while index < nds[counter][:movies].size do
+  gross += nds[counter][:movies][index][:worldwide_gross]
     index +=1
   end
-  director=directors_database[counter][:name]
+  director=nds[counter][:name]
  hash[director]=gross
 counter +=1
 end
